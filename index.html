@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bali Restaurant & Spa | Healthy Food & Relaxing Massage</title>
+  <meta name="description" content="Restoran dan Spa terbaik di Bali. Menu sehat, massage profesional, spa package, dan ambiance premium. Booking via WhatsApp.">
+  <meta property="og:title" content="Bali Restaurant & Spa" />
+  <meta property="og:description" content="Healthy food, relaxing spa, premium experience." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551892589-865f69869443">
+  <meta name="theme-color" content="#ffffff"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- NAV -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-sm bg-white sticky top-0 z-20">
+    <h1 class="text-xl font-bold">Bali Resto & Spa</h1>
+
+    <select id="langSelect" class="border p-2 rounded">
+      <option value="id">Indonesia</option>
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+    </select>
+  </header>
+
+  <!-- HERO -->
+  <section class="px-6 pt-8 pb-14 text-center">
+    <img src="https://images.unsplash.com/photo-1551892589-865f69869443"
+         class="rounded-2xl shadow-lg w-full mb-6">
+
+    <h2 id="title" class="text-3xl font-bold mb-3">
+      Restoran & Spa Premium di Bali
+    </h2>
+    <p id="subtitle" class="text-gray-600 mb-6">
+      Menu Sehat • Relaxing Massage • Spa Package
+    </p>
+
+    <a id="ctaBtn"
+       href="https://wa.me/6281234567890"
+       class="inline-block bg-green-600 text-white px-8 py-3 rounded-xl shadow font-semibold text-lg">
+      Booking via WhatsApp
+    </a>
+  </section>
+
+  <!-- RESTAURANT MENU -->
+  <section class="px-6 py-10 bg-gray-50">
+    <h2 id="menuTitle" class="text-xl font-bold mb-4 text-center">
+      Menu Restoran
+    </h2>
+
+    <ul id="menuList" class="space-y-3">
+      <li class="border rounded-lg p-4 shadow-sm flex justify-between">
+        <span id="m1">Salad Bowl — Rp 60.000</span>
+      </li>
+      <li class="border rounded-lg p-4 shadow-sm flex justify-between">
+        <span id="m2">Chicken Steak — Rp 85.000</span>
+      </li>
+      <li class="border rounded-lg p-4 shadow-sm flex justify-between">
+        <span id="m3">Fresh Juice — Rp 30.000</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- SPA PACKAGES -->
+  <section class="px-6 py-10">
+    <h2 id="spaTitle" class="text-xl font-bold mb-4 text-center">Spa & Massage</h2>
+
+    <div class="space-y-4">
+      <div class="border p-4 rounded-xl shadow-sm">
+        <p id="s1" class="font-medium">Balinese Massage — Rp 150.000 / 1 jam</p>
+      </div>
+      <div class="border p-4 rounded-xl shadow-sm">
+        <p id="s2" class="font-medium">Hot Stone Massage — Rp 250.000 / 1.5 jam</p>
+      </div>
+      <div class="border p-4 rounded-xl shadow-sm">
+        <p id="s3" class="font-medium">Royal Spa Package — Rp 450.000 / 2 jam</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="px-6 py-10 bg-gray-50">
+    <h2 id="galleryTitle" class="text-xl font-bold mb-4 text-center">Galeri</h2>
+
+    <div class="grid grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1559060017-0c86e4f49f4b" class="rounded-lg shadow">
+      <img src="https://images.unsplash.com/photo-1551208451-e15a09f7bd87" class="rounded-lg shadow">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef" class="rounded-lg shadow">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" class="rounded-lg shadow">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="px-6 py-10">
+    <h2 id="aboutTitle" class="text-xl font-bold mb-4">Tentang Kami</h2>
+    <p id="aboutText" class="text-gray-700 leading-relaxed">
+      Kami menawarkan pengalaman makan dan spa premium di Bali. Semua bahan makanan fresh dan terpilih, sementara therapist kami berpengalaman lebih dari 7 tahun.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2025 Bali Restaurant & Spa Demo.
+  </footer>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/6281234567890"
+     class="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg text-sm font-medium">
+    WhatsApp
+  </a>
+
+  <!-- TRANSLATION SCRIPT -->
+  <script>
+    const langData = {
+      id: {
+        title: "Restoran & Spa Premium di Bali",
+        subtitle: "Menu Sehat • Massage • Spa Package",
+        menuTitle: "Menu Restoran",
+        m1: "Salad Bowl — Rp 60.000",
+        m2: "Chicken Steak — Rp 85.000",
+        m3: "Fresh Juice — Rp 30.000",
+        spaTitle: "Spa & Massage",
+        s1: "Balinese Massage — Rp 150.000 / 1 jam",
+        s2: "Hot Stone Massage — Rp 250.000 / 1.5 jam",
+        s3: "Royal Spa Package — Rp 450.000 / 2 jam",
+        galleryTitle: "Galeri",
+        aboutTitle: "Tentang Kami",
+        aboutText: "Kami menawarkan pengalaman makan dan spa premium di Bali."
+      },
+      en: {
+        title: "Premium Restaurant & Spa in Bali",
+        subtitle: "Healthy Food • Massage • Spa Package",
+        menuTitle: "Restaurant Menu",
+        m1: "Salad Bowl — 60K",
+        m2: "Chicken Steak — 85K",
+        m3: "Fresh Juice — 30K",
+        spaTitle: "Spa & Massage",
+        s1: "Balinese Massage — 150K / 1 hour",
+        s2: "Hot Stone Massage — 250K / 1.5 hour",
+        s3: "Royal Spa Package — 450K / 2 hour",
+        galleryTitle: "Gallery",
+        aboutTitle: "About Us",
+        aboutText: "We offer a premium dining and spa experience in Bali."
+      },
+      zh: {
+        title: "巴厘岛高级餐厅与水疗中心",
+        subtitle: "健康食品 • 按摩 • 水疗套餐",
+        menuTitle: "餐厅菜单",
+        m1: "沙拉碗 — 60K",
+        m2: "鸡排 — 85K",
+        m3: "鲜榨果汁 — 30K",
+        spaTitle: "水疗 & 按摩",
+        s1: "巴厘岛按摩 — 150K / 1 小时",
+        s2: "热石按摩 — 250K / 1.5 小时",
+        s3: "皇家水疗套餐 — 450K / 2 小时",
+        galleryTitle: "图片集",
+        aboutTitle: "关于我们",
+        aboutText: "我们提供优质的餐饮和水疗体验。"
+      }
+    };
+
+    const nodes = {
+      title: document.getElementById("title"),
+      subtitle: document.getElementById("subtitle"),
+      menuTitle: document.getElementById("menuTitle"),
+      m1: document.getElementById("m1"),
+      m2: document.getElementById("m2"),
+      m3: document.getElementById("m3"),
+      spaTitle: document.getElementById("spaTitle"),
+      s1: document.getElementById("s1"),
+      s2: document.getElementById("s2"),
+      s3: document.getElementById("s3"),
+      galleryTitle: document.getElementById("galleryTitle"),
+      aboutTitle: document.getElementById("aboutTitle"),
+      aboutText: document.getElementById("aboutText"),
+      ctaBtn: document.getElementById("ctaBtn"),
+    };
+
+    document.getElementById("langSelect").addEventListener("change", (e) => {
+      const lang = e.target.value;
+      const d = langData[lang];
+
+      Object.keys(d).forEach(key => {
+        if (nodes[key]) nodes[key].innerText = d[key];
+      });
+
+      nodes.ctaBtn.innerText = lang === "zh" ? "通过 WhatsApp 预订" : "Booking via WhatsApp";
+    });
+  </script>
+
+</body>
+</html>
